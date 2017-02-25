@@ -1,0 +1,444 @@
+<! Doctype html>
+<html>
+
+<head>
+<!-- en-tête -->
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="css/gallerystyle.css" />
+
+<title> Commande </title>
+
+</head>
+
+<!-- Corps de la page -->
+<body>
+
+<div id="bloc">
+
+<header en-tête>
+<div id="slogan">
+<img src="img/log.jpg" alt="LOGO" id="logo" align="left"/>
+<br />
+
+<h1> El Djazair Catering Abroad </h1>
+<br />
+<h2> Notre Savoir Faire Au Service de l'Art Culinaire </h2>
+</div>
+
+<nav id="menu">
+
+<ul>  <!-- MENU DE NAVIGATION -->
+
+    <li> <a href="Accueil.html"> Accueil </a> </li> <li> <a href="NOS_SAVEURS.html"> Nos saveurs </a> </li> <li> <a href="NOS-POINTS-DE-VENTE.html"> Nos points de vente </a> </li> <li> <a href="CONTACT.html"> Nous écrire </a> </li>
+
+</ul>
+
+</nav>
+
+<img src="img/baniere.jpg" alt="Bannière" id="bann"/>
+
+</header>
+
+<section>
+
+<hr>
+
+<div> <!-- Ruban de défilement --> </div> 
+
+</section>
+
+<section id="form">
+
+<h3> FORMULAIRE DE COMMANDE EN LIGNE </h3>
+
+<!-- FORMULAIRE -->
+
+<table id="commande">
+
+
+
+<form method="post" action="BD.php">  <!-- post pour envoyer des données et BD.php pour envoyer à partir du bouton vers un doc php -->
+
+<!-- nom du champ LABEL id pour le lier au label name pour faciliter la gestion de la BD --> 
+<thead>
+
+<fieldset> 
+<legend> Vos coordonnées </legend>
+
+<tr> <label for="NOM"> <span class="label" > NOM </span> </label> <input type="text" name="NOM" id="NOM" maxlength="30" placeholder="Ex: Benkrid" size="60"/> <br /> </tr>
+
+<tr> <label for="PRENOM" > <span class="label" > PRENOM </span> </label> <input type="text" name="PRENOM" id="PRENOM" maxlength="20" placeholder="Ex: Lynda" size="60" /> <br /> </tr>
+
+<tr> <label for="AGE" > <span class="label" > AGE </span> </label> <input type="range" /> <br /> </tr>
+
+<tr> <label for="adress"> <span class="label" > ADRESSE </span> </label> <input type="text" name="ADRESSE" id="ADRESSE" maxlength="200" placeholder="Ex: 22, rue de la Liberté " size="100"/> <br /> </tr>
+
+<tr> <label for="Code"> <span class="label" > CODE POSTAL </span> </label> <input type="numero" name="CODE POSTAL" id="code" maxlength="6" placeholder="Ex: 16205" size="15"/> <br /> </tr>
+
+<tr> <label for="phone"> <span class="label" > TELEPHONE </span> </label> <input type="tel" name="telephone" id="phone" maxlength="10" placeholder="Ex: 0555555555 " size="15" /> <br /> </tr>
+
+<tr> <label for="email"> <span class="label" > E-MAIL  </span> </label> <input type="email" name="email" id="email" maxlength="20" placeholder="Ex: maboite@gmail.com" size="20" /> <br /> </tr>
+</fieldset>
+</thead>
+
+<tbody>  
+
+<!-- LES CATEGORIES -->
+
+<br />
+
+<fieldset>
+
+<legend> PAIN ET CROISSANTERIE </legend>
+
+<input type="checkbox" name="Pain" id="pain" /> 
+<label for="pain">Pain doux</label>
+
+
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+
+<br />
+
+<input type="checkbox" name="Brioche" id="brioche" /> <label
+for="brioche"> Scottish Longbreads </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+
+<br />
+
+<input type="checkbox" name="Manchons" id="Manchons" /> <label for="manchons" > MANCHONS AU FROMAGE </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+
+</fieldset>
+<br />
+
+<fieldset>
+
+<legend> NOS PLATS A EMPORTER </legend>
+<input type="checkbox" name="Jardin" id="Jardin" /> <label for="Jardin" > JARDINIERE AU RIZ </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+
+<br />
+
+<input type="checkbox" name="couscous" id="couscous" /> <label for="couscous" > COUSCOUS </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portions"> 3 portions </option>
+</select>
+
+<br />
+
+<input type="checkbox" name="alice" id="alice" /> <label for="alice" > ALICE MUTTON </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+
+<br />
+
+<input type="checkbox" name="JACK" id="jack" /> <label for="JACK" > Jack's New England Clam Showder </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+
+<br />
+
+<input type="checkbox" name="Singapore" id="Singapore" /> <label for="Singapore" > Singaporean Hokkien Fried Mee  </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+
+<br />
+
+<input type="checkbox" name="Thuring" id="Thuring" /> <label for="Thuring" > Thuringer RostBratWurst </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+
+<br />
+
+<input type="checkbox" name="Boston" id="Boston" /> <label for="Boston" > Boston Crab meat </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+
+<br />
+
+<input type="checkbox" name="Carnavon" id="Carnavon" /> <label for="Carnavon" > Carnavon Tigers </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+
+<br />
+
+<input type="checkbox" name="Chef" id="Chef" /> <label for="Chef" > Chef Anton's Cajun Seasoning </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+<br />
+
+<input type="checkbox" name="Bob" id="Bob" /> <label for="Bob" > Uncle Bob's Organic Dried Pears  </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+<br />
+
+<input type="checkbox" name="Wimmer" id="Wimmer" /> <label for="Wimmer" > Wimmers gute Semmelknödel  </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+
+</select>
+
+<br />
+<input type="checkbox" name="sushi" id="sushi" /> <label for="sushi" > Californian Sushi  </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+
+<br />
+
+</fieldset>
+
+<br />
+
+<fieldset>
+<legend> Gourmandises </legend>
+
+<input type="checkbox" name="gateau" id="gateau" /> <label for="gateau" >  Gâteau à la pâte de sucre </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+<br />
+
+<input type="checkbox" name="Tarte" id="Tarte" /> <label for="tarte" > Tarte au sucre </label>
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+<br />
+
+<input type="checkbox" name="Biscuits" id="Biscuits" /> <label for="Biscuits" >   Biscuits </label>
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 Kg </option>
+<option value="2 portion"> 2 Kgs </option>
+<option value="3 portion"> 3 Kgs </option>
+</select>
+<br />
+
+<input type="checkbox" name="Apérigume" id="Apérigume" /> <label for="Apérigume" > Apérigume </label>
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select
+
+<input type="checkbox" name="tea" id="tea" /> <label for="tea" >  Tea time Biscuits </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+
+<br />
+
+
+
+</fieldset>
+
+
+<br />
+
+<fieldset>
+
+<legend> Vieilles recettes de grand-mère </legend>
+
+<input type="checkbox" name="Fruit" id="Fruit" /> <label for="Fruit" >  FRUITMINE </label> 
+
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+<br />
+
+<input type="checkbox" name="Mascarpone" id="Mascarpone" /> <label for="Mascarpone" >  Mascarpone Fabioli </label>
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+<br />
+
+<input type="checkbox" name="Louis" id="Louis" /> <label for="Louisiana Gold" > </label>
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+<br />
+
+<input type="checkbox" name="Marmelade" id="Marmelade" /> <label for="Marmelade" > Sid Rodney's Marmelade </label>
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+<br />
+
+<input type="checkbox" name="sirop" id="sirop" /> <label for="sirop" > Sirop d'érable Pur </label>
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+<br />
+
+
+</fieldset>
+
+<br />
+
+<fieldset>
+
+<legend> Spécialités diverses </legend>
+<input type="checkbox" name="CANARD" id="CANARD" /> <label for="CANARD" > CANARDS FONDANTS </label>
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+<br />
+
+<input type="checkbox" name="coupe" id="coupe" /> <label for="coupe" > COUPES JARDINEES </label>
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+<br />
+
+<input type="checkbox" name="chateau" id="chateau" /> <label for="chateau" >  Château de Fruits </label>
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+<br />
+
+<input type="checkbox" name="cream" id="cream" /> <label for="cream" > Chic Sweet Cream </label>
+<label for="Quantité">  </label> 
+<select name="Quantité" id="Quantité" >
+<option value="1 portion"> 1 portion </option>
+<option value="2 portion"> 2 portions </option>
+<option value="3 portion"> 3 portions </option>
+</select>
+<br />
+
+</fieldset>
+
+<br />
+<input type="submit" value="Commandez !" />
+</tbody>
+</table>
+<hr > 
+                                                                  <!-- trait horizontal -->
+<footer>
+
+                                                           <!-- Adresse Tél E-mail fax -->
+
+
+
+<p>
+ <em  > El-Djazair Catering Abroad  </em>
+       <br /> 33, RUE de la gare Beaulieu _ Alger </br> Tél : 021 - 50 - 23 - 13   ;  Telex :  021-50-23-10   Email :    catering-abroad-dz@gmail.com 
+</p>
+		
+</footer>
+
+</div>
+</body>
+</html>

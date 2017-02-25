@@ -1,0 +1,386 @@
+/* TOUT D'ABORD LES STYLES REPETITIFS */
+
+#bloc 
+{
+border: 2px brown groove;
+border-radius: 8 px;
+background-image: url("../img/doud.jpg");
+background-repeat: fixed;
+margin: auto;
+
+}
+
+header
+{ margin-left: 10px;
+
+}
+
+#slogan
+{ text-align: top;
+background-image: url("../img/bouffe.png");
+background-repeat: scroll;
+}
+
+#logo
+{ border: groove 0px ;
+width: 20% ;
+height: 40%;
+margin-right: 20px;
+display: inline-block;
+position: relative;
+}
+
+#logo:hover 
+{ border: outset;
+
+}
+
+img
+{ 
+border: groove;
+
+}
+
+img:hover
+{ 
+border : inset;
+opacity: 0.6;
+
+ }
+
+h1
+{
+font-family: Jokerman;
+font-size: 60px;
+font-weight: bold;
+font-style: italic;
+text-decoration: underline;
+text-align: top right; 
+color: rgb(48,29,22);
+text-align: center;
+}
+
+h2
+{
+font-family: Curlz MT;
+font-size: 50px;
+font-weight: normal;
+font-style: oblic;
+text-decoration: normal;
+text-align: top right; 
+color: rgb(150,89,66);
+text-align: center;
+
+}
+
+nav 
+{
+display: inline-block;
+width: 1200px;
+height: O.5em;
+text-align: right;
+background-color: rgb(82,49,46);
+margin-left: 60px;
+margin-right: 0.1px;
+}
+
+
+nav ul 
+{ list-style-type: none;
+}
+
+nav li
+
+{ display: inline-block;
+  margin-right: 20px;
+}
+
+nav a
+
+{
+font-size: 30px;
+color: white;
+padding-bottom: 3px;
+text-decoration: none;
+font-family: Curlz MT, serif;
+}
+nav a:hover
+{
+color: rgb(153,102,51);
+border-bottom: 3px solid #760001;
+text-decoration: underlined;
+}
+
+a
+{
+}
+
+
+
+#bann
+{border: 2px;
+ width: 80%;
+ height: 50%;
+ vertical-align: center;
+ margin-top: 9px;
+ margin-left: 200px;
+ border-radius: 10px;
+ 
+}
+
+p #bann
+{ position: relative;
+}
+
+#bann:hover
+{border: outset;}
+
+hr
+{color: grey;
+}
+
+h3
+{ font-family: CASTELLAR;
+font-size: 40px;
+color: rg(122,67,50);
+text-align: center;
+margin-left: 30px;
+text-decoration: underline blink;
+font-style: italic;
+font-weight: bold;
+
+}
+
+h3:hover
+{border: 2px white groove; 
+
+}
+                  /* ACCUEIL */
+				  
+aside
+{
+}
+
+#hor
+{vertical-align: left;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+article + p
+
+{ 
+display: inline-block;
+font-size: 60px;
+text-indent: 50px;
+ } 
+
+
+mark, em, strong
+{
+font-family: time new roman;
+font-size: 25px;
+color: rgb(80,40,0);
+background-color: rgb(230,199,180);
+font-weight: bold;
+font-style: italic;
+text-decoration: underline;
+}
+
+
+p
+{ 
+display: inline-block;
+font-family: time new roman;
+font-size: 30px;
+color: black;
+text-align: justify;
+margin-right: 10px;
+margin-left: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+padding-left: 10px;
+line-height: normal;
+text-indent: 50px;
+}
+
+article
+{
+}
+
+h4, caption
+{
+font-family: CASTELLAR;
+font-size: 35px;
+color: rg(122,67,50);
+text-align: center;
+margin-left: 30px;
+text-decoration: underline ;
+font-style: italic;
+font-weight: bold;
+
+}
+
+legend
+{color: brown;
+font-weight: black;
+}
+.suivi
+{ border:outset;
+width: 10%;
+height: 20%;
+margin-right: 50px;
+vertical-align: center;
+margin-left: 300px;
+}
+
+
+
+#sponsoring
+{
+}
+
+.sponsor
+{ vertical-align: left;
+width: 40%;
+height: 40%;
+margin-right: 30px;
+margin-bottom: 10px;
+margin-left: 50px;
+}
+
+footer + p
+{ font-family: Time New Roman;
+font-size: 30px;
+font-weight: normal;
+font-style: normal;
+text-decoration: normal;
+text-indent: 2px;
+}
+
+
+
+
+
+#miniature
+{ margin-left: 15px;
+margin-right: 70px;
+opacity: 0.8;
+border: 0.1px;
+position: relative;
+}
+
+#DEGUST
+{margin-left: 15px;
+
+}
+
+ table
+ {
+ 
+ border: 8px brown;
+ vertical-align: center;
+ margin-left: 20px; 
+ 
+ border-collapse: separate;
+ }
+ 
+tbody
+{
+
+ border: 8px brown;
+ vertical-align: center;
+ margin-left: 20px; 
+ margin-top: 20px;
+ border-collapse: separate;
+ }
+ 
+ #gourm
+ {margin-left: 10px;
+ width: 220px;
+ height:300px;
+ margin-right: 70px;
+ }
+.pro
+{width: 200px;
+ height: 200px;
+ border: groove;
+ margin-right: 20px;
+ margin-left: 20px;
+ }
+ 
+ td
+ { 
+
+ border: 7px rgb(64,40,30);
+ border-collapse: collapse;
+
+ margin-right: 20px;
+ }
+ 
+ h5
+ {font-size: 20px;
+ text-decoration: underline;
+ font-family: Jokerman;
+ font-weight: bold}
+ }
+ 
+ h6 
+ {font-size: 40px;
+ font-weight: normal;
+ font-family: calibri;
+ text-align: center;
+ }
+ 
+ .attract
+ {margin-left: 250px;
+ margin-right: 20px;
+ width: 800px;
+ height: 300px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ background-image: url("../img/expert.jpg");
+ position: relative;
+ vertical-align: center;
+ 
+ }
+ 
+ .wilaya
+ {margin-left: 10px;
+ width: 300px;
+ height: 400px;
+ vertical-align: left; 
+ }
+ 
+ .mag
+ {margin-right: 20px;
+ width: 350px;
+ height: 270px;
+ }
+ 
+ a
+ {
+ color: Brown;
+ }
+ 
+ .label
+ { font-family: Time New Roman;
+ font-weight: bold;
+ font-size: 30px;
+ color: rgb(105,60,40);
+ }
+ 
+ #form
+ {margin-left: 10px;
+ margin-top: 20px;
+ }
+ 
+ input[type="SOUMETTRE"]
+ { vertical-align: right;}
+ 
+ input[type="Nettoyer"]
+ { vertical-align: left;}
+
+footer
+{ margin-right: 10px; 
+}

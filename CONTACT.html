@@ -1,0 +1,119 @@
+<! Doctype html>
+<html>
+
+<head>
+<!-- en-tête -->
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="css/gallerystyle.css" />
+
+<title> Nous écrire </title>
+
+</head>
+
+<!-- Corps de la page -->
+<body>
+
+<div id="bloc">
+
+<header en-tête>
+<div id="slogan">
+<img src="img/log.jpg" alt="LOGO" id="logo" align="left"/>
+<br />
+<h1> El Djazair Catering Abroad </h1>
+<br />
+<h2> Notre Savoir Faire Au Service de l'Art Culinaire </h2>
+</div>
+
+
+<nav id="menu">
+
+<ul>  <!-- MENU DE NAVIGATION -->
+
+    <li> <a href="Accueil.html"> Accueil </a> </li> <li> <a href="NOS_SAVEURS.html"> Nos saveurs </a> </li> <li> <a href="NOS-POINTS-DE-VENTE.html"> Nos points de vente </a> </li> <li> <a href="CONTACT.html"> Nous écrire </a> </li>
+
+</ul>
+
+</nav>
+
+<br />
+
+
+</header>
+
+
+
+<section>
+
+<hr>
+
+<div> <!-- Ruban de défilement --> </div> 
+
+</section>
+
+
+
+<section id="form">
+
+<!-- FORMULAIRE -->
+
+<table id="contact">
+
+
+
+<form method="post" action="BD.php">  <!-- post pour envoyer des données et BD.php pour envoyer à partir du bouton vers un doc php -->
+
+<!-- nom du champ LABEL id pour le lier au label name pour faciliter la gestion de la BD --> 
+<thead>
+
+<tr> <label for="NOM"> <span class="label" > NOM </span> </label> <input type="text" name="NOM" id="NOM" maxlength="30" placeholder="Ex: Benkrid" size="60"/> <br /> </tr>
+
+<tr> <label for="PRENOM" > <span class="label" > PRENOM </span> </label> <input type="text" name="PRENOM" id="PRENOM" maxlength="20" placeholder="Ex: Lynda" size="60" required /> <br /> </tr>
+
+<tr> <label for="AGE" > <span class="label" > AGE </span> </label> <input type="number" required /> <br /> </tr>
+
+<tr> <label for="adress"> <span class="label" > ADRESSE </span> </label> <input type="text" name="ADRESSE" id="ADRESSE" maxlength="200" placeholder="Ex: 22, rue de la Liberté " size="100" required /> <br /> </tr>
+
+<tr> <label for="Code"> <span class="label" > CODE POSTAL </span> </label> <input type="number" name="CODE POSTAL" id="code" maxlength="6" placeholder="Ex: 16205" size="15" required /> <br /> </tr>
+
+<tr> <label for="phone"> <span class="label" > TELEPHONE </span> </label> <input type="tel" name="telephone" id="phone" maxlength="10" placeholder="Ex: 0555555555 " size="15" required /> <br /> </tr>
+
+<tr> <label for="email"> <span class="label" > E-MAIL  </span> </label> <input type="email" name="email" id="email" maxlength="20" placeholder="Ex: maboite@gmail.com" size="20" required /> <br /> </tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+ 
+<label for="critique"> <span class="label" > DES SUGGESTIONS ou CRITIQUES ? </span> </label> 
+<br />
+<textarea type="texte" name="SUGGESTION" id="SUGGESTION" maxlength="1000" required > </textarea> <br />  
+</tr>
+
+</tbody>
+<br />
+
+<input type="submit" value="SOUMETTRE" action="BD.xls" align="right" /> <p>        </p> <input type="reset" value="Nettoyer" />
+</form>
+
+</table>
+<hr > 
+                                                                  <!-- trait horizontal -->
+<footer>
+
+                                                           <!-- Adresse Tél E-mail fax -->
+
+<span class ="pied"> <!-- pied de page -->
+
+
+<mark> El-Djazair Catering Abroad </mark> 
+     33, RUE de la gare Beaulieu _ Alger 
+	    </br></br> Tél : 021 - 50 - 23 - 13   ;  Telex :  021-50-23-10   Email :    catering-abroad-dz@gmail.com 
+</span>
+</footer>
+
+</div>
+</body>
+</html>
+
